@@ -1,0 +1,10 @@
+problem tp
+   p(atm) = 1.00000
+   t(k) = 2350.00000
+   phi = 1.00000
+react  
+   fuel=AL(cr) wt=100.00000 
+   ox=Air wt=100.00000 
+output trans
+   plot p t h mw cp gammas phi rho son cond pran
+end
