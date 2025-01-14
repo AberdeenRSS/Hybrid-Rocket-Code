@@ -7,7 +7,7 @@ o_fRatio = 7 # Ratio of fuel to oxidiser (1:x) in terms of mass
 runTankPressure = 50 # Pressure of the run tank in BAR
 injPressureDrop = 0.2 # Pressure drop accross injector as a percentage of total pressure
 portRatio = 3 # Ratio of inital and final port Diamiters (Df/Di)
-desiredThrust = 400 # Desired thrust in Newtons
+desiredThrust = 500 # Desired thrust in Newtons
 oxVol = 9 # Amount of oxidiser in L
 
 oxSystemEfficency = 1 # Efficency of oxidiser feed system
@@ -26,7 +26,7 @@ rhoOx = 800 # Density of oxidiser in kg/m^3
 
 ## Calculate derived values
 # Calculate mass of Oxidiser
-oxMass = (9/1000) * rhoOx
+oxMass = (oxVol/1000) * rhoOx
 
 # Calculate mass of fuel
 fuelMass = oxMass/o_fRatio
