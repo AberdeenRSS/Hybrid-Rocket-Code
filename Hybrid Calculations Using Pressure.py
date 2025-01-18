@@ -12,12 +12,12 @@ pressureRunTank = 50 # Pressure of the run tank in Bar
 pressureDropInj = 0.3 # Pressure drop across injector as a percentage of total pressure
 pressureAtmosphere = 101325 # Atmospheric pressure in Pa
 thrustDesired = 500 # Desired thrust in Newtons
-volOx = 9 # Amount of oxidiser in L
+volOx = 3 # Amount of oxidiser in L
 expRatio = 40 # Nozzle Expansion Area Ratio
-radiusInitPort = 0.01 # Initial port Radius in M
+radiusInitPort = 0.04 # Initial port Radius in M
 volPre = 0.001 # Volume of pre combustion chamber in m^3
 volPost = 0.001 # Volume of post combustion chamber in m^3
-radiusThroat = 0.0005 # radius of the nozzle throat in M
+radiusThroat = 0.008 # radius of the nozzle throat in M
 
 efficencyFeed= 1 # Efficency of oxidiser feed system
 efficencyComb = 0.9 # Combustion Efficency
@@ -77,7 +77,7 @@ timePlot = []
 ## Looped Solution
 while mOx > 0 :
     # Oxidiser Mass flow rate (can be a product of time)
-    mOxDot = 0.4 # Oxidiser mass flow rate in Kg/s
+    mOxDot = 0.3 # Oxidiser mass flow rate in Kg/s
 
     # Propellant Mass flow rate
     mPropDot = mOxDot + mFuelDot # Mass flow rate of the propellant (fuel and oxidiser)
@@ -86,7 +86,7 @@ while mOx > 0 :
     a=a_0/math.pow((1+(mFuelDot/mOxDot)),n) # Eq 3.50
 
     # Regression Rate
-    rDot = math.pow(a*(mPropDot/(np.pi*(radiusPort**2))),n) # Eq 3.51, assuming m=0
+    rDot = a*math.pow((mPropDot/(np.pi*(radiusPort*radiusPort))),n) # Eq 3.51, assuming m=0
 
     # Burning Area
     areaBurn = 2*np.pi*radiusPort*lenFuel
@@ -110,7 +110,9 @@ while mOx > 0 :
     gammaChamb = outputCEA[4]
 
     # Specific gas constant
-    R = R_u/massMol # Eq 4.4
+    Cp = cea_obj.get_Chamber_Cp(Pc=presChamb/100000, MR=ratioO_F, eps=expRatio, frozen=0)
+    Cv = Cp/gammaChamb
+    R = Cp-Cv
 
     # Calculate mass leaving the chamber
     mOutDot = (((gammaChamb*coeffDis*areaThroat*presChamb)/(efficencyComb*math.sqrt(gammaChamb*R*tempChamb)))
@@ -133,7 +135,7 @@ while mOx > 0 :
 
     # Calculate remaining oxidiser
     mOx = mOx - mOxDot * timeStep
-    print("Oxidiser Mass remaining",mOx)
+    #print("Oxidiser Mass remaining",mOx)
     oxPlot.append(mOx)
 
     time = time + timeStep
@@ -159,6 +161,12 @@ plt.plot(timePlot, ofPlot)
 
 plt.subplot(235)
 plt.title('Port Radius')
-plt.plot(timePlot, radiusPort)
+plt.plot(timePlot, portPlot)
 
-plt.show()
+#plt.show()
+
+
+print("Maximum Pressure", max(pressurePlot), "Bar")
+print("Inital Port Diamater", radiusInitPort*2)
+print("Final Port Diamater", radiusPort*2)
+print("Mass of Fuel Burned", np.pi*(radiusPort**2-radiusInitPort**2) * rhoFuel)
