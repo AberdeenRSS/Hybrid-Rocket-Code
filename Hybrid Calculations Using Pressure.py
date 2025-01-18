@@ -164,7 +164,7 @@ plt.subplot(235)
 plt.title('Port Radius')
 plt.plot(timePlot, portPlot)
 
-#plt.show()
+
 
 
 print("Maximum Pressure:", max(pressurePlot), "Bar")
@@ -174,3 +174,5 @@ print("Mass of Fuel Burned:", (np.pi*(radiusPort**2)-np.pi*(radiusInitPort**2)) 
 print("Mass of Oxidiser Burned:", moxInit, "kg")
 print("Average O/F ratio:", sum(ofPlot)/len(ofPlot))
 print("Burn Time", time, "Seconds")
+
+plt.show()
