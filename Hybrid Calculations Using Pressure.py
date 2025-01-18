@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from rocketcea.cea_obj import add_new_fuel, add_new_oxidizer
 from rocketcea.cea_obj_w_units import CEA_Obj
+from scipy.cluster.hierarchy import average
 
 ## Input parameters
 # System Properties
@@ -14,7 +15,7 @@ pressureAtmosphere = 101325 # Atmospheric pressure in Pa
 thrustDesired = 500 # Desired thrust in Newtons
 volOx = 3 # Amount of oxidiser in L
 expRatio = 40 # Nozzle Expansion Area Ratio
-radiusInitPort = 0.04 # Initial port Radius in M
+radiusInitPort = 0.01 # Initial port Radius in M
 volPre = 0.001 # Volume of pre combustion chamber in m^3
 volPost = 0.001 # Volume of post combustion chamber in m^3
 radiusThroat = 0.008 # radius of the nozzle throat in M
@@ -31,7 +32,6 @@ rhoFuel = 924 # Density of fuel in kg/m^3
 a_0 = 0.000155 # a_o value for propellant - oxidiser combo !!! be careful of a_o and a in given parameters, they are not the same
 n = 0.5 # n value for propellant - oxidiser combo
 lenFuel = 0.2 # Length of fuel grain in M
-entForm = -166900 # Enthalpy of formation in J/mol
 
 # Oxidiser Properties
 rhoOx = 800 # Density of oxidiser in kg/m^3
@@ -64,6 +64,7 @@ radiusPort = radiusInitPort # Sets the inital port radius
 presChamb = pressureAtmosphere # Sets the inital pressure
 areaThroat = np.pi*radiusThroat**2
 mOx = rhoOx*(volOx * 0.001)
+moxInit = mOx
 time = 0
 i = 0
 forcePlot = []
@@ -135,7 +136,7 @@ while mOx > 0 :
 
     # Calculate remaining oxidiser
     mOx = mOx - mOxDot * timeStep
-    #print("Oxidiser Mass remaining",mOx)
+    print("Oxidiser Mass remaining",mOx)
     oxPlot.append(mOx)
 
     time = time + timeStep
@@ -166,7 +167,10 @@ plt.plot(timePlot, portPlot)
 #plt.show()
 
 
-print("Maximum Pressure", max(pressurePlot), "Bar")
-print("Inital Port Diamater", radiusInitPort*2)
-print("Final Port Diamater", radiusPort*2)
-print("Mass of Fuel Burned", np.pi*(radiusPort**2-radiusInitPort**2) * rhoFuel)
+print("Maximum Pressure:", max(pressurePlot), "Bar")
+print("Inital Port Diamater:", radiusInitPort*2*1000, "mm" )
+print("Final Port Diamater:", radiusPort*2*1000, "mm")
+print("Mass of Fuel Burned:", (np.pi*(radiusPort**2)-np.pi*(radiusInitPort**2)) * lenFuel * rhoFuel, "kg")
+print("Mass of Oxidiser Burned:", moxInit, "kg")
+print("Average O/F ratio:", sum(ofPlot)/len(ofPlot))
+print("Burn Time", time, "Seconds")
