@@ -25,7 +25,9 @@ efficencyComb = 0.9 # Combustion Efficency
 efficencyNoz = 1 # Nozzle efficency
 coeffDis = 1 # Coefficent of discharge
 
-R_u = 8.3145 # Universal gas constant
+#Mechanical Properties
+wallThickness = 0.005 # Wall thickness in M
+wallYieldStrength = 200000000 # Wall Yield Strength in PA
 
 # Fuel Properties
 rhoFuel = 924 # Density of fuel in kg/m^3
@@ -166,13 +168,18 @@ plt.plot(timePlot, portPlot)
 
 
 
-
-print("Maximum Pressure:", max(pressurePlot), "Bar")
+pressureMax = max(pressurePlot)
+print("Maximum Pressure:", pressureMax, "Bar")
 print("Inital Port Diamater:", radiusInitPort*2*1000, "mm" )
 print("Final Port Diamater:", radiusPort*2*1000, "mm")
 print("Mass of Fuel Burned:", (np.pi*(radiusPort**2)-np.pi*(radiusInitPort**2)) * lenFuel * rhoFuel, "kg")
 print("Mass of Oxidiser Burned:", moxInit, "kg")
 print("Average O/F ratio:", sum(ofPlot)/len(ofPlot))
 print("Burn Time", time, "Seconds")
+
+##Calculate Mechainical Properties
+hoopStress = (pressureMax * 100000 * radiusPort) / wallThickness
+safetyFactor = wallYieldStrength/hoopStress
+print("Wall Safety factor", safetyFactor)
 
 plt.show()
