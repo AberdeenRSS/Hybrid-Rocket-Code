@@ -12,13 +12,13 @@ from scipy.cluster.hierarchy import average
 pressureRunTank = 50 # Pressure of the run tank in Bar
 pressureDropInj = 0.3 # Pressure drop across injector as a percentage of total pressure
 pressureAtmosphere = 101325 # Atmospheric pressure in Pa
-thrustDesired = 500 # Desired thrust in Newtons
-volOx = 3 # Amount of oxidiser in L
+thrustDesired = 20 # Desired thrust in Newtons
+volOx = 0.5 # Amount of oxidiser in L
 expRatio = 40 # Nozzle Expansion Area Ratio
-radiusInitPort = 0.01 # Initial port Radius in M
-volPre = 0.001 # Volume of pre combustion chamber in m^3
-volPost = 0.001 # Volume of post combustion chamber in m^3
-radiusThroat = 0.008 # radius of the nozzle throat in M
+radiusInitPort = 0.005 # Initial port Radius in M
+volPre = 0.00001 # Volume of pre combustion chamber in m^3
+volPost = 0.00001 # Volume of post combustion chamber in m^3
+radiusThroat = 0.003 # radius of the nozzle throat in M
 
 efficencyFeed= 1 # Efficency of oxidiser feed system
 efficencyComb = 0.9 # Combustion Efficency
@@ -33,7 +33,7 @@ wallYieldStrength = 200000000 # Wall Yield Strength in PA
 rhoFuel = 924 # Density of fuel in kg/m^3
 a_0 = 0.000155 # a_o value for propellant - oxidiser combo !!! be careful of a_o and a in given parameters, they are not the same
 n = 0.5 # n value for propellant - oxidiser combo
-lenFuel = 0.2 # Length of fuel grain in M
+lenFuel = 0.06 # Length of fuel grain in M
 
 # Oxidiser Properties
 rhoOx = 800 # Density of oxidiser in kg/m^3
@@ -61,7 +61,6 @@ cea_obj = CEA_Obj(propName='', oxName=oxidizer_name, fuelName=fuel_name, pressur
 
 ## Design Calculations
 mFuelDot = 0 # Sets inital mass flow rate of the fuel
-timeStep = 0.001 # Sets the size of the time step used in the solution
 radiusPort = radiusInitPort # Sets the inital port radius
 presChamb = pressureAtmosphere # Sets the inital pressure
 areaThroat = np.pi*radiusThroat**2
@@ -75,21 +74,29 @@ oxPlot = []
 ofPlot = []
 portPlot = []
 timePlot = []
-
+mPropDotPlot = []
+dPresChambdtplot = []
 
 ## Looped Solution
 while mOx > 0 :
+    # Change time step to be shorter at start
+    if time < 1:
+        timeStep = 0.0005
+    else:
+        timeStep = 0.001
+
     # Oxidiser Mass flow rate (can be a product of time)
-    mOxDot = 0.3 # Oxidiser mass flow rate in Kg/s
+    mOxDot = 0.05 # Oxidiser mass flow rate in Kg/s
 
     # Propellant Mass flow rate
     mPropDot = mOxDot + mFuelDot # Mass flow rate of the propellant (fuel and oxidiser)
+    mPropDotPlot.append(mPropDot)
 
     # calculate a value from a_0, not needed if given a directly
     a=a_0/math.pow((1+(mFuelDot/mOxDot)),n) # Eq 3.50
 
     # Regression Rate
-    rDot = a*math.pow((mPropDot/(np.pi*(radiusPort*radiusPort))),n) # Eq 3.51, assuming m=0
+    rDot = a*math.pow((mOxDot/(np.pi*(radiusPort*radiusPort))),n) # Eq 3.51, assuming m=0
 
     # Burning Area
     areaBurn = 2*np.pi*radiusPort*lenFuel
@@ -118,11 +125,11 @@ while mOx > 0 :
     R = Cp-Cv
 
     # Calculate mass leaving the chamber
-    mOutDot = (((gammaChamb*coeffDis*areaThroat*presChamb)/(efficencyComb*math.sqrt(gammaChamb*R*tempChamb)))
-                    *math.pow((2/(gammaChamb+1)),(gammaChamb+1)/(2*(gammaChamb-1)))) # Ee 3.73
+    mOutDot = ((gammaChamb*coeffDis*areaThroat*presChamb)/(efficencyComb*math.sqrt(gammaChamb*R*tempChamb)))*math.pow((2/(gammaChamb+1)),(gammaChamb+1)/(2*(gammaChamb-1))) # Ee 3.73
 
     # Chamber Pressure Change
     dPresChambdt = ((R*tempChamb)/volChamber)*((areaBurn*rDot*(rhoFuel-(presChamb/(R*tempChamb)))) + mOxDot - mOutDot) # Eq 3.76
+    dPresChambdtplot.append(mPropDot)
 
     # Calculate Thrust
     force = mOutDot*CStar*efficencyComb*coeffDis*efficencyNoz
@@ -166,16 +173,26 @@ plt.subplot(235)
 plt.title('Port Radius')
 plt.plot(timePlot, portPlot)
 
+plt.subplot(236)
+plt.title('Mass Flow rate')
+plt.plot(timePlot, mPropDotPlot)
 
 
 pressureMax = max(pressurePlot)
 print("Maximum Pressure:", pressureMax, "Bar")
 print("Inital Port Diamater:", radiusInitPort*2*1000, "mm" )
 print("Final Port Diamater:", radiusPort*2*1000, "mm")
-print("Mass of Fuel Burned:", (np.pi*(radiusPort**2)-np.pi*(radiusInitPort**2)) * lenFuel * rhoFuel, "kg")
+print("Pre Combustion Chamber length", volPre/(np.pi*(radiusPort**2)) * 1000, "mm")
+print("Post Combustion Chamber length", volPost/(np.pi*(radiusPort**2)) * 1000, "mm")
+massFuel = (np.pi*(radiusPort**2)-np.pi*(radiusInitPort**2)) * lenFuel * rhoFuel
+print("Mass of Fuel Burned:", massFuel, "kg")
 print("Mass of Oxidiser Burned:", moxInit, "kg")
 print("Average O/F ratio:", sum(ofPlot)/len(ofPlot))
 print("Burn Time", time, "Seconds")
+print("Max Thrust", max(forcePlot), "N")
+impulse = (sum(forcePlot)/len(forcePlot))*time
+print("Impulse", impulse, "Ns")
+print("Average ISP", impulse/((massFuel+moxInit)*9.81), "s")
 
 ##Calculate Mechainical Properties
 hoopStress = (pressureMax * 100000 * radiusPort) / wallThickness
