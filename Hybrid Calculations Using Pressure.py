@@ -13,11 +13,11 @@ pressureRunTank = 50 # Pressure of the run tank in Bar
 pressureDropInj = 0.3 # Pressure drop across injector as a percentage of total pressure
 pressureAtmosphere = 101325 # Atmospheric pressure in Pa
 thrustDesired = 20 # Desired thrust in Newtons
-volOx = 0.5 # Amount of oxidiser in L
-expRatio = 40 # Nozzle Expansion Area Ratio
+volOx = 0.4 # Amount of oxidiser in L
+expRatio = 20 # Nozzle Expansion Area Ratio
 radiusInitPort = 0.005 # Initial port Radius in M
-volPre = 0.00001 # Volume of pre combustion chamber in m^3
-volPost = 0.00001 # Volume of post combustion chamber in m^3
+volPre = 0.00005 # Volume of pre combustion chamber in m^3
+volPost = 0.00005 # Volume of post combustion chamber in m^3
 radiusThroat = 0.003 # radius of the nozzle throat in M
 
 efficencyFeed= 1 # Efficency of oxidiser feed system
@@ -33,7 +33,7 @@ wallYieldStrength = 200000000 # Wall Yield Strength in PA
 rhoFuel = 924 # Density of fuel in kg/m^3
 a_0 = 0.000155 # a_o value for propellant - oxidiser combo !!! be careful of a_o and a in given parameters, they are not the same
 n = 0.5 # n value for propellant - oxidiser combo
-lenFuel = 0.06 # Length of fuel grain in M
+lenFuel = 0.065 # Length of fuel grain in M
 
 # Oxidiser Properties
 rhoOx = 800 # Density of oxidiser in kg/m^3
@@ -46,12 +46,18 @@ h,cal=-224200     t(k)=298.15   rho=.924
 add_new_fuel( 'paraffin', card_str )
 
 card_str = """
+fuel polyethylene   C 20 H 40   wt%=100
+h,cal=-28000     t(k)=298.15   rho=.9
+"""
+add_new_fuel( 'polyethylene', card_str )
+
+card_str = """
 oxid N20   N 2 O 1   wt%=100
 h,cal=15500     t(k)=298.15    rho=1.226
 """
 add_new_oxidizer( 'N20', card_str )
 
-fuel_name = 'paraffin'
+fuel_name = 'polyethylene'
 oxidizer_name = 'N20'
 
 # Make CEA into useful units
@@ -86,7 +92,7 @@ while mOx > 0 :
         timeStep = 0.001
 
     # Oxidiser Mass flow rate (can be a product of time)
-    mOxDot = 0.05 # Oxidiser mass flow rate in Kg/s
+    mOxDot = 0.055 # Oxidiser mass flow rate in Kg/s
 
     # Propellant Mass flow rate
     mPropDot = mOxDot + mFuelDot # Mass flow rate of the propellant (fuel and oxidiser)
@@ -199,4 +205,4 @@ hoopStress = (pressureMax * 100000 * radiusPort) / wallThickness
 safetyFactor = wallYieldStrength/hoopStress
 print("Wall Safety factor", safetyFactor)
 
-plt.show()
+#plt.show()
