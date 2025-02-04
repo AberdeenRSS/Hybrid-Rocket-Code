@@ -13,11 +13,11 @@ pressureRunTank = 50 # Pressure of the run tank in Bar
 pressureDropInj = 0.3 # Pressure drop across injector as a percentage of total pressure
 pressureAtmosphere = 101325 # Atmospheric pressure in Pa
 thrustDesired = 20 # Desired thrust in Newtons
-volOx = 0.4 # Amount of oxidiser in L
-expRatio = 20 # Nozzle Expansion Area Ratio
-radiusInitPort = 0.005 # Initial port Radius in M
+volOx = 0.8 # Amount of oxidiser in L
+expRatio = 40 # Nozzle Expansion Area Ratio
+radiusInitPort = 0.01 # Initial port Radius in M
 volPre = 0.00005 # Volume of pre combustion chamber in m^3
-volPost = 0.00005 # Volume of post combustion chamber in m^3
+volPost = 0.000025 # Volume of post combustion chamber in m^3
 radiusThroat = 0.003 # radius of the nozzle throat in M
 
 efficencyFeed= 1 # Efficency of oxidiser feed system
@@ -31,9 +31,11 @@ wallYieldStrength = 200000000 # Wall Yield Strength in PA
 
 # Fuel Properties
 rhoFuel = 924 # Density of fuel in kg/m^3
-a_0 = 0.000155 # a_o value for propellant - oxidiser combo !!! be careful of a_o and a in given parameters, they are not the same
-n = 0.5 # n value for propellant - oxidiser combo
-lenFuel = 0.065 # Length of fuel grain in M
+a_0 = 0.000116 # a_o value for propellant - oxidiser combo !!! be careful of a_o and a in given parameters, they are not the same
+n = 0.331 # n value for propellant - oxidiser combo
+lenFuel = 0.15 # Length of fuel grain in M
+
+# values for paraffin: 0.000155, 0.5 | Values for Pe: 0.000116, 0.331
 
 # Oxidiser Properties
 rhoOx = 800 # Density of oxidiser in kg/m^3
@@ -47,7 +49,7 @@ add_new_fuel( 'paraffin', card_str )
 
 card_str = """
 fuel polyethylene   C 20 H 40   wt%=100
-h,cal=-28000     t(k)=298.15   rho=.9
+h,cal=-12700     t(k)=298.15   rho=.96
 """
 add_new_fuel( 'polyethylene', card_str )
 
@@ -205,4 +207,4 @@ hoopStress = (pressureMax * 100000 * radiusPort) / wallThickness
 safetyFactor = wallYieldStrength/hoopStress
 print("Wall Safety factor", safetyFactor)
 
-#plt.show()
+plt.show()
