@@ -26,7 +26,7 @@ efficencyNoz = 1 # Nozzle efficency
 coeffDis = 1 # Coefficent of discharge
 
 #Mechanical Properties
-wallThickness = 0.005 # Wall thickness in M
+wallThickness = 0.003 # Wall thickness in M
 wallYieldStrength = 200000000 # Wall Yield Strength in PA
 
 # Fuel Properties
