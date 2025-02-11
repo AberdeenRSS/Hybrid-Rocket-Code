@@ -14,11 +14,11 @@ pressureDropInj = 0.3 # Pressure drop across injector as a percentage of total p
 pressureAtmosphere = 101325 # Atmospheric pressure in Pa
 thrustDesired = 20 # Desired thrust in Newtons
 volOx = 0.8 # Amount of oxidiser in L
-expRatio = 40 # Nozzle Expansion Area Ratio
+expRatio = 20 # Nozzle Expansion Area Ratio
 radiusInitPort = 0.01 # Initial port Radius in M
 volPre = 0.00005 # Volume of pre combustion chamber in m^3
 volPost = 0.000025 # Volume of post combustion chamber in m^3
-radiusThroat = 0.003 # radius of the nozzle throat in M
+radiusThroat = 0.003 # Radius of the nozzle throat in M
 
 efficencyFeed= 1 # Efficency of oxidiser feed system
 efficencyComb = 0.9 # Combustion Efficency
@@ -26,14 +26,14 @@ efficencyNoz = 1 # Nozzle efficency
 coeffDis = 1 # Coefficent of discharge
 
 #Mechanical Properties
-wallThickness = 0.003 # Wall thickness in M
+wallThickness = 0.005 # Wall thickness in M
 wallYieldStrength = 200000000 # Wall Yield Strength in PA
 
 # Fuel Properties
 rhoFuel = 924 # Density of fuel in kg/m^3
 a_0 = 0.000116 # a_o value for propellant - oxidiser combo !!! be careful of a_o and a in given parameters, they are not the same
 n = 0.331 # n value for propellant - oxidiser combo
-lenFuel = 0.15 # Length of fuel grain in M
+lenFuel = 0.13 # Length of fuel grain in M
 
 # values for paraffin: 0.000155, 0.5 | Values for Pe: 0.000116, 0.331
 
@@ -94,7 +94,7 @@ while mOx > 0 :
         timeStep = 0.001
 
     # Oxidiser Mass flow rate (can be a product of time)
-    mOxDot = 0.055 # Oxidiser mass flow rate in Kg/s
+    mOxDot = 0.06 # Oxidiser mass flow rate in Kg/s
 
     # Propellant Mass flow rate
     mPropDot = mOxDot + mFuelDot # Mass flow rate of the propellant (fuel and oxidiser)
@@ -153,7 +153,8 @@ while mOx > 0 :
 
     # Calculate remaining oxidiser
     mOx = mOx - mOxDot * timeStep
-    print("Oxidiser Mass remaining",mOx)
+    if i%100 == 0:
+        print("Oxidiser Mass remaining",mOx)
     oxPlot.append(mOx)
 
     time = time + timeStep
@@ -207,4 +208,4 @@ hoopStress = (pressureMax * 100000 * radiusPort) / wallThickness
 safetyFactor = wallYieldStrength/hoopStress
 print("Wall Safety factor", safetyFactor)
 
-plt.show()
+#plt.show()
