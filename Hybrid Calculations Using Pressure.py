@@ -191,7 +191,6 @@ areaInj = mOxDot / (coeffDis*np.sqrt(2*rhoOx*pressureDropInj*pressureRunTank*100
 singHoleArea = np.pi*math.pow(0.0005,2) # Calculates area of single hole in the injector
 numHoles = areaInj/singHoleArea # Calculates the number of holes needed in injector
 
-
 pressureMax = max(pressurePlot)
 print("Maximum Pressure:", pressureMax, "Bar")
 print("Inital Port Diamater:", radiusInitPort*2*1000, "mm" )
