@@ -13,9 +13,9 @@ pressureRunTank = 50 # Pressure of the run tank in Bar
 pressureDropInj = 0.3 # Pressure drop across injector as a percentage of total pressure
 pressureAtmosphere = 101325 # Atmospheric pressure in Pa
 thrustDesired = 20 # Desired thrust in Newtons
-volOx = 0.8 # Amount of oxidiser in L
+volOx = 0.6 # Amount of oxidiser in L
 expRatio = 20 # Nozzle Expansion Area Ratio
-radiusInitPort = 0.01 # Initial port Radius in M
+radiusInitPort = 0.0075 # Initial port Radius in M
 volPre = 0.00005 # Volume of pre combustion chamber in m^3
 volPost = 0.000025 # Volume of post combustion chamber in m^3
 radiusThroat = 0.003 # Radius of the nozzle throat in M
@@ -33,7 +33,7 @@ wallYieldStrength = 200000000 # Wall Yield Strength in PA
 rhoFuel = 924 # Density of fuel in kg/m^3
 a_0 = 0.000116 # a_o value for propellant - oxidiser combo !!! be careful of a_o and a in given parameters, they are not the same
 n = 0.331 # n value for propellant - oxidiser combo
-lenFuel = 0.13 # Length of fuel grain in M
+lenFuel = 0.17 # Length of fuel grain in M
 
 # values for paraffin: 0.000155, 0.5 | Values for Pe: 0.000116, 0.331
 
@@ -153,7 +153,7 @@ while mOx > 0 :
 
     # Calculate remaining oxidiser
     mOx = mOx - mOxDot * timeStep
-    if i%100 == 0:
+    if i%500 == 0:
         print("Oxidiser Mass remaining",mOx)
     oxPlot.append(mOx)
 
