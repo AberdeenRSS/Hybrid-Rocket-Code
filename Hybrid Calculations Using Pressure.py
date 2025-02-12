@@ -10,10 +10,10 @@ from scipy.cluster.hierarchy import average
 ## Input parameters
 # System Properties
 pressureRunTank = 50 # Pressure of the run tank in Bar
-pressureDropInj = 0.3 # Pressure drop across injector as a percentage of total pressure
+pressureDropInj = 0.2 # Pressure drop across injector as a percentage of total pressure
 pressureAtmosphere = 101325 # Atmospheric pressure in Pa
 thrustDesired = 20 # Desired thrust in Newtons
-volOx = 0.6 # Amount of oxidiser in L
+volOx = 0.5 # Amount of oxidiser in L
 expRatio = 20 # Nozzle Expansion Area Ratio
 radiusInitPort = 0.0075 # Initial port Radius in M
 volPre = 0.00005 # Volume of pre combustion chamber in m^3
@@ -186,6 +186,11 @@ plt.subplot(236)
 plt.title('Mass Flow rate')
 plt.plot(timePlot, mPropDotPlot)
 
+#Calculate injector area and number of holes
+areaInj = mOxDot / (coeffDis*np.sqrt(2*rhoOx*pressureDropInj*pressureRunTank*100000))
+singHoleArea = np.pi*math.pow(0.0005,2) # Calculates area of single hole in the injector
+numHoles = areaInj/singHoleArea # Calculates the number of holes needed in injector
+
 
 pressureMax = max(pressurePlot)
 print("Maximum Pressure:", pressureMax, "Bar")
@@ -202,6 +207,7 @@ print("Max Thrust", max(forcePlot), "N")
 impulse = (sum(forcePlot)/len(forcePlot))*time
 print("Impulse", impulse, "Ns")
 print("Average ISP", impulse/((massFuel+moxInit)*9.81), "s")
+print("Number of holes in shower head injector needed ", numHoles)
 
 ##Calculate Mechainical Properties
 hoopStress = (pressureMax * 100000 * radiusPort) / wallThickness
