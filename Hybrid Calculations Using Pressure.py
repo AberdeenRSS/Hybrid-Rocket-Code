@@ -13,14 +13,14 @@ pressureRunTank = 50 # Pressure of the run tank in Bar
 pressureDropInj = 0.2 # Pressure drop across injector as a percentage of total pressure
 pressureAtmosphere = 101325 # Atmospheric pressure in Pa
 thrustDesired = 20 # Desired thrust in Newtons
-volOx = 0.5 # Amount of oxidiser in L
+volOx = 10 # Amount of oxidiser in L
 expRatio = 20 # Nozzle Expansion Area Ratio
-radiusInitPort = 0.0075 # Initial port Radius in M
+radiusInitPort = 0.015 # Initial port Radius in M
 volPre = 0.00005 # Volume of pre combustion chamber in m^3
 volPost = 0.000025 # Volume of post combustion chamber in m^3
-radiusThroat = 0.003 # Radius of the nozzle throat in M
+radiusThroat = 0.0062 # Radius of the nozzle throat in M
 
-efficencyFeed= 1 # Efficency of oxidiser feed system
+efficencyInj= 0.8 # Efficency of oxidiser feed system
 efficencyComb = 0.9 # Combustion Efficency
 efficencyNoz = 1 # Nozzle efficency
 coeffDis = 1 # Coefficent of discharge
@@ -33,7 +33,7 @@ wallYieldStrength = 200000000 # Wall Yield Strength in PA
 rhoFuel = 924 # Density of fuel in kg/m^3
 a_0 = 0.000116 # a_o value for propellant - oxidiser combo !!! be careful of a_o and a in given parameters, they are not the same
 n = 0.331 # n value for propellant - oxidiser combo
-lenFuel = 0.17 # Length of fuel grain in M
+lenFuel = 0.33 # Length of fuel grain in M
 
 # values for paraffin: 0.000155, 0.5 | Values for Pe: 0.000116, 0.331
 
@@ -94,7 +94,7 @@ while mOx > 0 :
         timeStep = 0.001
 
     # Oxidiser Mass flow rate (can be a product of time)
-    mOxDot = 0.06 # Oxidiser mass flow rate in Kg/s
+    mOxDot = 0.25 # Oxidiser mass flow rate in Kg/s
 
     # Propellant Mass flow rate
     mPropDot = mOxDot + mFuelDot # Mass flow rate of the propellant (fuel and oxidiser)
@@ -187,7 +187,7 @@ plt.title('Mass Flow rate')
 plt.plot(timePlot, mPropDotPlot)
 
 #Calculate injector area and number of holes
-areaInj = mOxDot / (coeffDis*np.sqrt(2*rhoOx*pressureDropInj*pressureRunTank*100000))
+areaInj = mOxDot / (efficencyInj*np.sqrt(2*rhoOx*pressureDropInj*pressureRunTank*100000)) # Source: https://wikis.mit.edu/confluence/display/RocketTeam/Topic+6%3A+Injector+Design
 singHoleArea = np.pi*math.pow(0.0005,2) # Calculates area of single hole in the injector
 numHoles = areaInj/singHoleArea # Calculates the number of holes needed in injector
 
@@ -213,4 +213,4 @@ hoopStress = (pressureMax * 100000 * radiusPort) / wallThickness
 safetyFactor = wallYieldStrength/hoopStress
 print("Wall Safety factor", safetyFactor)
 
-#plt.show()
+plt.show()
