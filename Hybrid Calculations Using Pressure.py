@@ -3,6 +3,7 @@ import math
 import matplotlib.pyplot as plt
 
 import numpy as np
+from matplotlib.pyplot import xlabel, ylabel
 from rocketcea.cea_obj import add_new_fuel, add_new_oxidizer
 from rocketcea.cea_obj_w_units import CEA_Obj
 from scipy.cluster.hierarchy import average
@@ -13,12 +14,12 @@ pressureRunTank = 50 # Pressure of the run tank in Bar
 pressureDropInj = 0.2 # Pressure drop across injector as a percentage of total pressure
 pressureAtmosphere = 101325 # Atmospheric pressure in Pa
 thrustDesired = 20 # Desired thrust in Newtons
-volOx = 10 # Amount of oxidiser in L
-expRatio = 20 # Nozzle Expansion Area Ratio
-radiusInitPort = 0.015 # Initial port Radius in M
+volOx = 2.5 # Amount of oxidiser in L
+expRatio = 5 # Nozzle Expansion Area Ratio
+radiusInitPort = 0.01 # Initial port Radius in M
 volPre = 0.00005 # Volume of pre combustion chamber in m^3
 volPost = 0.000025 # Volume of post combustion chamber in m^3
-radiusThroat = 0.0062 # Radius of the nozzle throat in M
+radiusThroat = 0.003 # Radius of the nozzle throat in M
 
 efficencyInj= 0.8 # Efficency of oxidiser feed system
 efficencyComb = 0.9 # Combustion Efficency
@@ -26,14 +27,14 @@ efficencyNoz = 1 # Nozzle efficency
 coeffDis = 1 # Coefficent of discharge
 
 #Mechanical Properties
-wallThickness = 0.005 # Wall thickness in M
+wallThickness = 0.00175 # Wall thickness in M
 wallYieldStrength = 200000000 # Wall Yield Strength in PA
 
 # Fuel Properties
-rhoFuel = 924 # Density of fuel in kg/m^3
+rhoFuel = 960 # Density of fuel in kg/m^3
 a_0 = 0.000116 # a_o value for propellant - oxidiser combo !!! be careful of a_o and a in given parameters, they are not the same
 n = 0.331 # n value for propellant - oxidiser combo
-lenFuel = 0.33 # Length of fuel grain in M
+lenFuel = 0.15 # Length of fuel grain in M
 
 # values for paraffin: 0.000155, 0.5 | Values for Pe: 0.000116, 0.331
 
@@ -55,7 +56,7 @@ add_new_fuel( 'polyethylene', card_str )
 
 card_str = """
 oxid N20   N 2 O 1   wt%=100
-h,cal=15500     t(k)=298.15    rho=1.226
+h,cal=15500     t(k)=298.15    rho=.793
 """
 add_new_oxidizer( 'N20', card_str )
 
@@ -91,10 +92,10 @@ while mOx > 0 :
     if time < 1:
         timeStep = 0.0005
     else:
-        timeStep = 0.001
+        timeStep = 0.002
 
     # Oxidiser Mass flow rate (can be a product of time)
-    mOxDot = 0.25 # Oxidiser mass flow rate in Kg/s
+    mOxDot = 0.059# Oxidiser mass flow rate in Kg/s
 
     # Propellant Mass flow rate
     mPropDot = mOxDot + mFuelDot # Mass flow rate of the propellant (fuel and oxidiser)
@@ -104,7 +105,7 @@ while mOx > 0 :
     a=a_0/math.pow((1+(mFuelDot/mOxDot)),n) # Eq 3.50
 
     # Regression Rate
-    rDot = a*math.pow((mOxDot/(np.pi*(radiusPort*radiusPort))),n) # Eq 3.51, assuming m=0
+    rDot = a*math.pow((mPropDot/(np.pi*(radiusPort*radiusPort))),n) # Eq 3.51, assuming m=0
 
     # Burning Area
     areaBurn = 2*np.pi*radiusPort*lenFuel
@@ -165,26 +166,38 @@ plt.figure(figsize=(18,12))
 plt.subplot(231)
 plt.title('Pressure')
 plt.plot(timePlot, pressurePlot)
+xlabel("Time,s")
+ylabel("Pressure,Bar")
 
 plt.subplot(232)
-plt.title('force')
+plt.title('Force')
 plt.plot(timePlot, forcePlot)
+xlabel("Time,s")
+ylabel("Force,N")
 
 plt.subplot(233)
 plt.title('Oxidiser Mass')
 plt.plot(timePlot, oxPlot)
+xlabel("Time,s")
+ylabel("Mass,Kg")
 
 plt.subplot(234)
 plt.title('O/F ratio')
 plt.plot(timePlot, ofPlot)
+xlabel("Time,s")
+ylabel("Oxidiser/fuel ratio")
 
 plt.subplot(235)
 plt.title('Port Radius')
 plt.plot(timePlot, portPlot)
+xlabel("Time,s")
+ylabel("Port Radius,m")
 
 plt.subplot(236)
 plt.title('Mass Flow rate')
 plt.plot(timePlot, mPropDotPlot)
+xlabel("Time,s")
+ylabel("Mass Flow Rate, Kg/s")
 
 #Calculate injector area and number of holes
 areaInj = mOxDot / (efficencyInj*np.sqrt(2*rhoOx*pressureDropInj*pressureRunTank*100000)) # Source: https://wikis.mit.edu/confluence/display/RocketTeam/Topic+6%3A+Injector+Design
@@ -193,6 +206,7 @@ numHoles = areaInj/singHoleArea # Calculates the number of holes needed in injec
 
 pressureMax = max(pressurePlot)
 print("Maximum Pressure:", pressureMax, "Bar")
+print("Temperature", tempChamb, "K")
 print("Inital Port Diamater:", radiusInitPort*2*1000, "mm" )
 print("Final Port Diamater:", radiusPort*2*1000, "mm")
 print("Pre Combustion Chamber length", volPre/(np.pi*(radiusPort**2)) * 1000, "mm")
@@ -209,7 +223,7 @@ print("Average ISP", impulse/((massFuel+moxInit)*9.81), "s")
 print("Number of holes in shower head injector needed ", numHoles)
 
 ##Calculate Mechainical Properties
-hoopStress = (pressureMax * 100000 * radiusPort) / wallThickness
+hoopStress = (pressureMax * 100000 * 0.0063) / wallThickness
 safetyFactor = wallYieldStrength/hoopStress
 print("Wall Safety factor", safetyFactor)
 
