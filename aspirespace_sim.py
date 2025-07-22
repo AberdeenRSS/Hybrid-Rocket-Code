@@ -1,6 +1,6 @@
 import math
 import nitrous_engine_sim
-from nitrous_engine_sim import assign_engine_parameters, read_engine_file
+from nitrous_engine_sim import assign_engine_parameters, read_engine_file, write_engine_file, read_engine_parameters
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -14,10 +14,10 @@ nitrous_engine_sim.load_default_engine(engine, 'Nitrous_HDPE')
 #Engine Andrew
 
 engine.ox_initial_tank_pressure_bar = 50
-engine.ox_tank_volume = 6/1000
+engine.ox_tank_volume = 10/1000
 engine.ox_initial_temp_C = 20
-engine.ox_orifice_number = 2
-engine.ox_orifice_diameter = 0.0011
+engine.ox_orifice_number = 4
+engine.ox_orifice_diameter = 0.0015
 
 engine.fuel_orifice_number = 0
 
@@ -40,10 +40,12 @@ engine.post_comb_chamber_length = 0.04
 engine.nozzle_efficiency = 1
 engine.nozzle_throat_rdot = 0
 engine.nozzle_area_ratio = 2.3
-engine.nozzle_throat_diameter = 0.0074*2
+engine.nozzle_throat_diameter = 0.005*2
+
+write_engine_file(read_engine_parameters(engine), 'aberdeen_r2s.engine')
 
 # Prepare sim
-engine.delta_time = 0.001
+engine.delta_time = 0.01
 
 engine.burn_status = 0
 engine.initialize_engine()
@@ -54,7 +56,7 @@ engine.ignition = True
 engine.surpress_mixture_out_of_range = True
 
 MAX_ITERATIONS = 200000
-RESULT_PERIOD = 100
+RESULT_PERIOD = 1
 i = 0
 res = list()
 last_fault = 0
