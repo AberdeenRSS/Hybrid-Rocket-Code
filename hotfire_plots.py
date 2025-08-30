@@ -8,6 +8,7 @@ import scipy.integrate
 OUT_DIR = 'data/hotfire_plots/'
 TIME_START = 50
 TIME_END = 70   
+NITROUS_CUTOFF = 60
 
 #Open the H5 file in read mode
 with h5py.File('data/Aberdeen_5_HOTFIRE.h5', 'r') as file:
@@ -37,7 +38,11 @@ with h5py.File('data/Aberdeen_5_HOTFIRE.h5', 'r') as file:
 
     plt.title('Thrust')
     plt.plot(time[start_index:end_index], thrust_values[start_index:end_index], 'o', color='0', ms=0.5)
+    plt.axvline(NITROUS_CUTOFF, label=f'Nitrous cutoff ({NITROUS_CUTOFF:.2f}s)', ls='--', color='r')
+
     plt.xlabel('Time (s)')
+    plt.ylabel('Thrust (N)')
+    plt.legend()
 
     plt.savefig(f'{OUT_DIR}/thrust.png', dpi=500)
     plt.close()
