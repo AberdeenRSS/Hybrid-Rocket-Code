@@ -38,6 +38,7 @@ for orifice_r in orifice_radii:
         nitrous_engine_sim.load_default_prop(engine, 'L_Nitrous_S_HDPE')
         assign_engine_parameters(engine, engine_parameters)
 
+        # 4 ox orifices
         engine.ox_orifice_diameter = orifice_r*2
         engine.nozzle_throat_diameter = nozzle_r*2
 
