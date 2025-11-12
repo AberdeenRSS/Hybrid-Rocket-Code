@@ -38,6 +38,15 @@ with h5py.File('data/Aberdeen_5_HOTFIRE.h5', 'r') as file:
     temp_channel = file['channels']['NITROUS_TT_4']
     temp_values  = np.array(temp_channel['data'])[start_index:end_index]
 
+    chamber_pressure_channel = file['channels']['R2S_PT_1']
+    chamber_pressure_values  = np.array(chamber_pressure_channel['data'])[start_index:end_index]
+
+    thrust_channel = file['channels']['THRUST_STAND_LC1']
+    thrust_values  = np.array(thrust_channel['data'])
+    # Zero thrust values relative to start of fire
+    thrust_values -= thrust_values[start_index] 
+    thrust_values  = np.array(thrust_channel['data'])[start_index:end_index]
+
 
 # Load a default engine to start with
 engine = nitrous_engine_sim.Cengines()
@@ -54,7 +63,7 @@ engine.fuel_orifice_number = 0
 a_0 = 0.000116
 
 engine.regression_a = a_0
-engine.regression_n = 0.336
+engine.regression_n = 0.35 # 0.336
 engine.regression_m = 0
 
 engine.solid_propellant_density = 960
@@ -75,12 +84,15 @@ engine.nozzle_throat_diameter = 0.003*2
 # write_engine_file(read_engine_parameters(engine), 'aberdeen_r2s.engine')
 
 # Configure manual mode
-engine.ox_feed_model = 1
+engine.ox_feed_model = 2
 engine.ox_status = 0 if TYPE == 'LIQUID' else 1
 engine.ox_initial_tank_pressure_bar = 30
 engine.ox_tank_pressure_bar = 30
 engine.ox_initial_temp_C = 30
 
+# Fitted density values
+fitted_nitrous_density_t = np.array([0,  7.5,  8, 9.03, 9.2, 9.5, 11, 17, 23])
+fitted_nitrous_density_v = np.array([20, 20,  55, 32,   75,  75,  12, 5,  3.5])*2.5
 
 # Prepare sim
 engine.delta_time = 0.0001
@@ -108,6 +120,12 @@ while i < MAX_ITERATIONS:
 
         engine.ox_tank_pressure_bar = cur_press
         engine.ox_initial_temp_C = cur_temp
+
+        rho = np.interp(engine.burn_time, fitted_nitrous_density_t, fitted_nitrous_density_v)
+
+        engine.ox_tank_vapour_density = rho
+        engine.ox_tank_liquid_density = rho
+
     else:
         break
 
@@ -121,6 +139,7 @@ while i < MAX_ITERATIONS:
         rr['ox_tank_pressure'] = engine.ox_tank_pressure_bar
         rr['ox_mdot_tank_outflow'] = engine.ox_mdot_tank_outflow
         rr['isp'] = (engine.thrust/rr['nozzle_mass_flowrate'])/10
+        rr['ox_density'] = rho
         res.append(rr)
 
     if engine._fault != last_fault:
@@ -152,73 +171,101 @@ print(f'Oxidizer spent: {total_ox_mass_spent:.3f}kg')
 print(f'Engine specific impulse: {np.average(df["isp"]):.2f}')
 
 
-plt.figure(figsize=(18,18))
-plt.subplot(3, 3, 1)
+# plt.figure(figsize=(18,18))
+# plt.subplot(3, 3, 1)
 
-plt.title('Mass flow rates')
-plt.plot(df['time'], df['total_inflow']*1000, label='Total inflow')
-plt.plot(df['time'], df['nozzle_mass_flowrate']*1000, label='Nozzle')
-plt.plot(df['time'], df['ox_mdot_tank_outflow']*1000, label='Oxidizer')
+# plt.title('Mass flow rates')
+# plt.plot(df['time'], df['total_inflow']*1000, label='Total inflow')
+# plt.plot(df['time'], df['nozzle_mass_flowrate']*1000, label='Nozzle')
+# plt.plot(df['time'], df['ox_mdot_tank_outflow']*1000, label='Oxidizer')
 
-plt.legend()
+# plt.legend()
+# plt.xlabel('Time (s)')
+# plt.ylabel('Mass flow (g/s)')
+
+# plt.subplot(3, 3, 2)
+
+# plt.title('Thrust')
+# plt.plot(df['time'], df['thrust'])
+# plt.xlabel('Time (s)')
+# plt.ylabel('Force (N)')
+
+# plt.subplot(3, 3, 3)
+
+# plt.title('Chamber pressure')
+# plt.plot(df['time'], df['chamber_pressure_bar'], label='Chamber pressure')
+# plt.xlabel('Time (s)')
+# plt.ylabel('Pressure (bar)')
+
+# plt.subplot(3, 3, 4)
+
+# plt.title('Nozzile exit pressure')
+# plt.plot(df['time'], df['nozzle_exit_pressure']/1e5)
+# plt.xlabel('Time (s)')
+# plt.ylabel('Pressure (bar)')
+
+# plt.subplot(3, 3, 5)
+
+# plt.title('Fuel grain hole size')
+# plt.plot(df['time'], df['centre_port_radius'])
+# plt.xlabel('Time (s)')
+# plt.ylabel('Radius (m)')
+
+# plt.subplot(3, 3, 6)
+
+# plt.title('Pressure (Experimental)')
+# plt.plot(time, pressure_values)
+# plt.xlabel('Time (s)')
+# plt.ylabel('Pressure (bar)')
+
+# plt.subplot(3, 3, 7)
+
+# plt.title('Oxydizer to fuel ratio')
+# plt.plot(df['time'], 1/df['fuel_to_ox_ratio'])
+# plt.xlabel('Time (s)')
+# plt.ylabel('O/F ratio')
+
+# plt.subplot(3, 3, 8)
+
+# plt.title('Isp')
+# plt.plot(df['time'], df['isp'])
+# plt.xlabel('Time (s)')
+# plt.ylabel('Isp (s)')
+
+# plt.subplot(3, 3, 9)
+
+# plt.title('Nitrous Temperature (Experimental)')
+# plt.plot(time, temp_values)
+# plt.xlabel('Time (s)')
+# plt.ylabel('T (K)')
+
+# os.makedirs(OUT_DIR, exist_ok=True)
+# plt.savefig(f'{OUT_DIR}/pressure_{TYPE}.png', dpi=300, bbox_inches='tight')
+# plt.clf()
+
+plt.figure(figsize=(9,6))
+
+
+# plt.plot(time, thrust_values, '-', label='Experimental')
+# plt.plot(df['time'], df['thrust'], '.', label='Simulated')
+# plt.xlabel('Time (s)')
+# plt.ylabel('Thrust (N)')
+# plt.legend()
+# plt.title('Thrust')
+# plt.savefig(f'{OUT_DIR}/pressure_{TYPE}_thrust.png', dpi=300, bbox_inches='tight')
+# plt.clf()
+
+# plt.plot(time, chamber_pressure_values, '-', label='Experimental')
+# plt.plot(df['time'], df['chamber_pressure_bar'], '.', label='Simulated')
+# plt.xlabel('Time (s)')
+# plt.ylabel('Pressure (Bar)')
+# plt.legend()
+# plt.title('Chamber pressure')
+# plt.savefig(f'{OUT_DIR}/pressure_{TYPE}_pressure.png', dpi=300, bbox_inches='tight')
+# plt.clf()
+
+plt.plot(df['time'], df['ox_density'])
 plt.xlabel('Time (s)')
-plt.ylabel('Mass flow (g/s)')
-
-plt.subplot(3, 3, 2)
-
-plt.title('Thrust')
-plt.plot(df['time'], df['thrust'])
-plt.xlabel('Time (s)')
-plt.ylabel('Force (N)')
-
-plt.subplot(3, 3, 3)
-
-plt.title('Chamber pressure')
-plt.plot(df['time'], df['chamber_pressure_bar'], label='Chamber pressure')
-plt.xlabel('Time (s)')
-plt.ylabel('Pressure (bar)')
-
-plt.subplot(3, 3, 4)
-
-plt.title('Nozzile exit pressure')
-plt.plot(df['time'], df['nozzle_exit_pressure']/1e5)
-plt.xlabel('Time (s)')
-plt.ylabel('Pressure (bar)')
-
-plt.subplot(3, 3, 5)
-
-plt.title('Fuel grain hole size')
-plt.plot(df['time'], df['centre_port_radius'])
-plt.xlabel('Time (s)')
-plt.ylabel('Radius (m)')
-
-plt.subplot(3, 3, 6)
-
-plt.title('Pressure (Experimental)')
-plt.plot(time, pressure_values)
-plt.xlabel('Time (s)')
-plt.ylabel('Pressure (bar)')
-
-plt.subplot(3, 3, 7)
-
-plt.title('Oxydizer to fuel ratio')
-plt.plot(df['time'], 1/df['fuel_to_ox_ratio'])
-plt.xlabel('Time (s)')
-plt.ylabel('O/F ratio')
-
-plt.subplot(3, 3, 8)
-
-plt.title('Isp')
-plt.plot(df['time'], df['isp'])
-plt.xlabel('Time (s)')
-plt.ylabel('Isp (s)')
-
-plt.subplot(3, 3, 9)
-
-plt.title('Nitrous Temperature (Experimental)')
-plt.plot(time, temp_values)
-plt.xlabel('Time (s)')
-plt.ylabel('T (K)')
-
-os.makedirs(OUT_DIR, exist_ok=True)
-plt.savefig(f'{OUT_DIR}/pressure_{TYPE}.png', dpi=300, bbox_inches='tight')
+plt.ylabel('Density (kg/m^3)')
+plt.title('Nitrous density')
+plt.savefig(f'{OUT_DIR}/pressure_{TYPE}_density.png', dpi=300, bbox_inches='tight')
