@@ -12,13 +12,12 @@ from common.mach_corrected_drag import mjollnir_rocket_drag
 OUT = 'output/r2s_2026'
 T_FIRE_MAX_ = 60
 T_MAX = 200
+DT = 0.001
 
 os.makedirs(f'./{OUT}', exist_ok=True)
 
 cira_model = CiraAtmosphereModel()
 cira_model.import_data('./data/atmosphere/cira_nhant.txt', 14)
-
-
 
 LAT = 67 # (Aberdeen)
 
@@ -43,7 +42,7 @@ rocket_radius = 0.08
 
 rocket_cross_section = math.pi*rocket_radius**2
     
-rocket_no_throttle = RocketSim(25, 25, 230, 4000, rocket_cross_section, drag_model, air_temp_model, air_density_model)
+rocket_no_throttle = RocketSim(20, 22, 213, 3500, rocket_cross_section, drag_model, air_temp_model, air_density_model)
 no_throttle_result = rocket_no_throttle.simulate_to_impact(0.01)
 
 # rocket_throttle = RocketSim(20, 25, 220, make_dynamic_thrust_model(2000, 0.6, 10000), rocket_cross_section, drag_model, air_temp_model, air_density_model)

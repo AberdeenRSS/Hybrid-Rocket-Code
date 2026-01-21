@@ -1,0 +1,1394 @@
+Run 1 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     28.000     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   72.000    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00001 LB/CU-IN OR   0.0004 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    9.399176 H 
+    5.205697 C 
+    1.272265 N 
+    0.636132 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1116  1549    27.55   405.00     0.81   234.69  1.1581  4.622    5.961
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =    10.095     7.928 
+NUMBER MOLS GAS AND CONDENSED =     4.622    3.866
+
+ 3.865952e+000 C&         2.355465e+000 H2         1.024161e+000 CH4        6.335875e-001 N2        
+ 2.881751e-001 H2O        2.829774e-001 CO         3.246060e-002 CO2        5.013278e-003 NH3       
+  3.29923E-05 CNH         3.29923E-05 CNH         3.29923E-05 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    11.781
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   810   998     1.00    14.70   -27.37   234.69  1.1668  4.339    0.230
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.513     7.238 
+NUMBER MOLS GAS AND CONDENSED =     4.339    3.995
+
+ 3.995323e+000 C&         2.015062e+000 H2         1.102871e+000 CH4        6.353958e-001 N2        
+ 4.766166e-001 H2O        5.544552e-002 CO         5.200754e-002 CO2        1.428825e-003 NH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    11.999
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   153.5  1.1730    1027   15.70  3329.5            4.74    0.1  0.25557    684
+   156.6  1.1147    1075   16.02  3437.8   130.0    5.00    0.1  0.26388    810
+
+  --------------------------------------------------------------------------------
+
+Run 2 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     30.593     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   69.407    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00001 LB/CU-IN OR   0.0004 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    9.060728 H 
+    5.018250 C 
+    1.390067 N 
+    0.695034 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1137  1586    27.55   405.00     2.38   237.28  1.1641  4.699    5.862
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.838     7.858 
+NUMBER MOLS GAS AND CONDENSED =     4.699    3.731
+
+ 3.731063e+000 C&         2.437743e+000 H2         9.040065e-001 CH4        6.925532e-001 N2        
+ 3.482336e-001 CO         2.771795e-001 H2O        3.478036e-002 CO2        4.871849e-003 NH3       
+  4.54108E-05 CNH         4.54108E-05 CNH         4.54108E-05 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    11.862
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   823  1022     1.00    14.70   -26.73   237.28  1.1716  4.403    0.227
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.298     7.183 
+NUMBER MOLS GAS AND CONDENSED =     4.403    3.914
+
+ 3.913803e+000 C&         2.113420e+000 H2         9.629235e-001 CH4        6.943192e-001 N2        
+ 4.889977e-001 H2O        7.697343e-002 CO         6.450368e-002 CO2        1.384140e-003 NH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.024
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   155.6  1.1795    1043   15.66  3381.1            4.70    0.1  0.25953    686
+   159.2  1.1149    1095   16.02  3502.0   132.3    4.98    0.1  0.26881    823
+
+  --------------------------------------------------------------------------------
+
+Run 3 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     33.185     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   66.815    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00001 LB/CU-IN OR   0.0004 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    8.722281 H 
+    4.830801 C 
+    1.507869 N 
+    0.753935 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1157  1624    27.55   405.00     3.94   239.78  1.1705  4.775    5.770
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.600     7.796 
+NUMBER MOLS GAS AND CONDENSED =     4.775    3.582
+
+ 3.582338e+000 C&         2.508810e+000 H2         7.918848e-001 CH4        7.515373e-001 N2        
+ 4.202895e-001 CO         2.613912e-001 H2O        3.609651e-002 CO2        4.689608e-003 NH3       
+  6.19078E-05 CNH         6.19078E-05 CNH         6.19078E-05 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    11.966
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   837  1047     1.00    14.70   -26.10   239.78  1.1767  4.463    0.224
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.100     7.135 
+NUMBER MOLS GAS AND CONDENSED =     4.463    3.815
+
+ 3.814913e+000 C&         2.199812e+000 H2         8.330743e-001 CH4        7.532493e-001 N2        
+ 4.931700e-001 H2O        1.048239e-001 CO         7.794278e-002 CO2        1.326394e-003 NH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.080
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   157.7  1.1863    1059   15.62  3431.9            4.65    0.1  0.26344    688
+   161.7  1.1155    1116   16.02  3564.4   134.6    4.97    0.1  0.27360    837
+
+  --------------------------------------------------------------------------------
+
+Run 4 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     35.778     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   64.222    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0004 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    8.383832 H 
+    4.643353 C 
+    1.625672 N 
+    0.812836 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1179  1663    27.55   405.00     5.51   242.19  1.1772  4.848    5.683
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.379     7.740 
+NUMBER MOLS GAS AND CONDENSED =     4.848    3.421
+
+ 3.420775e+000 C&         2.568571e+000 H2         8.105372e-001 N2         6.874505e-001 CH4       
+ 4.986082e-001 CO         2.415789e-001 H2O        3.629350e-002 CO2        4.470526e-003 NH3       
+  8.37435E-05 CNH         8.37435E-05 CNH         8.37435E-05 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.094
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   851  1072     1.00    14.70   -25.47   242.19  1.1821  4.521    0.221
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.918     7.097 
+NUMBER MOLS GAS AND CONDENSED =     4.521    3.697
+
+ 3.697157e+000 C&         2.272400e+000 H2         8.121849e-001 N2         7.142625e-001 CH4       
+ 4.890793e-001 H2O        1.400671e-001 CO         9.181722e-002 CO2        1.257893e-003 NH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.168
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   159.8  1.1935    1075   15.59  3482.3            4.60    0.1  0.26730    689
+   164.2  1.1161    1137   16.02  3628.7   136.8    4.95    0.1  0.27854    851
+
+  --------------------------------------------------------------------------------
+
+Run 5 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     38.370     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   61.630    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0004 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    8.045384 H 
+    4.455905 C 
+    1.743474 N 
+    0.871737 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1202  1704    27.55   405.00     7.08   244.51  1.1843  4.918    5.602
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.176     7.692 
+NUMBER MOLS GAS AND CONDENSED =     4.918    3.247
+
+ 3.247416e+000 C&         2.617061e+000 H2         8.695504e-001 N2         5.903333e-001 CH4       
+ 5.825653e-001 CO         2.184553e-001 H2O        3.532666e-002 CO2        4.218289e-003 NH3       
+  0.000112963 CNH         0.000112963 CNH         0.000112963 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.247
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   865  1097     1.00    14.70   -24.84   244.51  1.1878  4.575    0.219
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.755     7.069 
+NUMBER MOLS GAS AND CONDENSED =     4.575    3.560
+
+ 3.559660e+000 C&         2.329656e+000 H2         8.711247e-001 N2         6.070787e-001 CH4       
+ 4.770847e-001 H2O        1.836399e-001 CO         1.054785e-001 CO2        1.181525e-003 NH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.293
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   161.8  1.2011    1092   15.55  3532.6            4.55    0.1  0.27116    690
+   166.7  1.1171    1159   16.01  3693.6   139.1    4.93    0.1  0.28352    865
+
+  --------------------------------------------------------------------------------
+
+Run 6 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     40.963     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   59.037    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0005 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    7.706937 H 
+    4.268457 C 
+    1.861276 N 
+    0.930638 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1226  1747    27.55   405.00     8.64   246.73  1.1917  4.984    5.527
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.990     7.651 
+NUMBER MOLS GAS AND CONDENSED =     4.984    3.063
+
+ 3.063340e+000 C&         2.653974e+000 H2         9.285729e-001 N2         6.713033e-001 CO        
+ 5.002782e-001 CH4        1.928252e-001 H2O        3.322281e-002 CO2        3.935626e-003 NH3       
+  0.000152632 CNH         0.000152632 CNH         0.000152632 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.426
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   879  1122     1.00    14.70   -24.21   246.73  1.1939  4.626    0.216
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.609     7.051 
+NUMBER MOLS GAS AND CONDENSED =     4.626    3.402
+
+ 3.402283e+000 C&         2.370533e+000 H2         9.300668e-001 N2         5.116714e-001 CH4       
+ 4.579239e-001 H2O        2.362509e-001 CO         1.182042e-001 CO2        1.099766e-003 NH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.456
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   163.9  1.2090    1110   15.50  3583.2            4.49    0.1  0.27505    691
+   169.1  1.1186    1182   16.00  3759.3   141.3    4.90    0.1  0.28857    879
+
+  --------------------------------------------------------------------------------
+
+Run 7 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     43.556     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   56.444    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0005 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    7.368488 H 
+    4.081009 C 
+    1.979079 N 
+    0.989539 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1252  1794    27.55   405.00    10.21   248.86  1.1995  5.047    5.459
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.822     7.617 
+NUMBER MOLS GAS AND CONDENSED =     5.047    2.870
+
+ 2.869680e+000 C&         2.678825e+000 H2         9.876025e-001 N2         7.637743e-001 CO        
+ 4.170958e-001 CH4        1.655438e-001 H2O        3.007809e-002 CO2        3.622425e-003 NH3       
+ 2.076176e-004 CNH        5.780390e-005 C2H4       1.123805e-005 CH2O       1.256559e-006 CH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.632
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   893  1147     1.00    14.70   -23.60   248.86  1.2003  4.672    0.214
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.481     7.043 
+NUMBER MOLS GAS AND CONDENSED =     4.672    3.226
+
+ 3.225592e+000 C&         2.394381e+000 H2         9.890091e-001 N2         4.326640e-001 H2O       
+ 4.278270e-001 CH4        2.982588e-001 CO         1.292808e-001 CO2        1.015624e-003 NH3       
+   1.1391E-06 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.661
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   166.0  1.2174    1129   15.46  3634.7            4.44    0.1  0.27900    693
+   171.5  1.1207    1206   15.99  3826.2   143.7    4.87    0.1  0.29370    893
+
+  --------------------------------------------------------------------------------
+
+Run 8 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     46.148     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   53.852    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0005 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    7.030041 H 
+    3.893561 C 
+    2.096881 N 
+    1.048440 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1281  1846    27.55   405.00    11.77   250.89  1.2076  5.104    5.398
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.671     7.593 
+NUMBER MOLS GAS AND CONDENSED =     5.104    2.668
+
+ 2.690666e+000 H2         2.667629e+000 C&         1.046631e+000 N2         8.586137e-001 CO        
+ 3.407648e-001 CH4        1.375910e-001 H2O        2.608451e-002 CO2        3.288492e-003 NH3       
+ 2.859524e-004 CNH        6.238991e-005 C2H4       1.220225e-005 CH2O       1.690073e-006 CH3       
+  1.33377E-06 C2H2        1.33377E-06 C2H2      
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.867
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   907  1172     1.00    14.70   -22.99   250.89  1.2072  4.715    0.212
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.368     7.046 
+NUMBER MOLS GAS AND CONDENSED =     4.715    3.031
+
+ 3.030811e+000 C&         2.401145e+000 H2         1.047953e+000 N2         4.025615e-001 H2O       
+ 3.696820e-001 CO         3.549482e-001 CH4        1.380707e-001 CO2        9.295551e-004 NH3       
+  1.54653E-06 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    12.910
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   168.1  1.2260    1151   15.41  3687.9            4.39    0.1  0.28308    695
+   173.9  1.1315    1227   15.93  3870.4   145.8    4.87    0.1  0.29710    907
+
+  --------------------------------------------------------------------------------
+
+Run 9 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     48.741     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   51.259    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0005 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    6.691593 H 
+    3.706113 C 
+    2.214683 N 
+    1.107342 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1314  1905    27.55   405.00    13.34   252.82  1.2159  5.155    5.345
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.540     7.578 
+NUMBER MOLS GAS AND CONDENSED =     5.155    2.458
+
+ 2.688259e+000 H2         2.458353e+000 C&         1.105654e+000 N2         9.542555e-001 CO        
+ 2.713928e-001 CH4        1.099867e-001 H2O        2.151582e-002 CO2        2.930754e-003 NH3       
+ 4.009712e-004 CNH        6.712491e-005 C2H4       1.302093e-005 CH2O       2.310174e-006 CH3       
+    2.246E-06 C2H2          2.246E-06 C2H2      
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    13.136
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   920  1197     1.00    14.70   -22.41   252.82  1.2146  4.754    0.210
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.271     7.060 
+NUMBER MOLS GAS AND CONDENSED =     4.754    2.820
+
+ 2.819601e+000 C&         2.391144e+000 H2         1.106897e+000 N2         4.501817e-001 CO        
+ 3.689533e-001 H2O        2.922053e-001 CH4        1.440757e-001 CO2        8.440462e-004 NH3       
+    2.073E-06 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    13.203
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   170.4  1.2348    1176   15.37  3743.6            4.33    0.1  0.28736    699
+   176.4  1.1354    1257   15.91  3941.2   148.3    4.82    0.1  0.30252    920
+
+  --------------------------------------------------------------------------------
+
+Run 10 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     51.333     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   48.667    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0006 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    6.353145 H 
+    3.518665 C 
+    2.332486 N 
+    1.166243 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1352  1974    27.55   405.00    14.91   254.64  1.2242  5.196    5.302
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.433     7.578 
+NUMBER MOLS GAS AND CONDENSED =     5.196    2.243
+
+ 2.669721e+000 H2         2.243056e+000 C&         1.164654e+000 N2         1.048768e+000 CO        
+ 2.093123e-001 CH4        8.392037e-002 H2O        1.674340e-002 CO2        2.555502e-003 NH3       
+ 5.776453e-004 CNH        7.206851e-005 C2H4       1.364174e-005 CH2O       3.959367e-006 C2H2      
+   3.2298E-06 CH3          3.2298E-06 CH3          3.2298E-06 CH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    13.442
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   934  1222     1.00    14.70   -21.86   254.64  1.2225  4.790    0.209
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.187     7.083 
+NUMBER MOLS GAS AND CONDENSED =     4.790    2.594
+
+ 2.593752e+000 C&         2.365385e+000 H2         1.165840e+000 N2         5.393887e-001 CO        
+ 3.329325e-001 H2O        2.385443e-001 CH4        1.469336e-001 CO2        7.602670e-004 NH3       
+  2.74726E-06 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    13.544
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   172.8  1.2437    1205   15.32  3803.1            4.28    0.1  0.29193    706
+   178.9  1.1442    1289   15.86  4004.4   150.7    4.79    0.1  0.30738    934
+
+  --------------------------------------------------------------------------------
+
+Run 11 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     53.926     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   46.074    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0006 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    6.014697 H 
+    3.331217 C 
+    2.450288 N 
+    1.225144 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1397  2055    27.55   405.00    16.47   256.33  1.2326  5.227    5.270
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.350     7.592 
+NUMBER MOLS GAS AND CONDENSED =     5.227    2.023
+
+ 2.632441e+000 H2         2.022640e+000 C&         1.223606e+000 N2         1.140099e+000 CO        
+ 1.552054e-001 CH4        6.060571e-002 H2O        1.218539e-002 CO2        2.172466e-003 NH3       
+ 8.592840e-004 CNH        7.718827e-005 C2H4       1.401992e-005 CH2O       7.383532e-006 C2H2      
+  4.64758E-06 CH3         4.64758E-06 CH3         4.64758E-06 CH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    13.793
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   948  1247     1.00    14.70   -21.35   256.33  1.2309  4.821    0.207
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.116     7.116 
+NUMBER MOLS GAS AND CONDENSED =     4.821    2.356
+
+ 2.355807e+000 C&         2.323387e+000 H2         1.224780e+000 N2         6.353524e-001 CO        
+ 2.963197e-001 H2O        1.932989e-001 CH4        1.467081e-001 CO2        6.797013e-004 NH3       
+  3.59068E-06 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    13.935
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   175.4  1.2525    1240   15.28  3867.7            4.23    0.1  0.29688    716
+   181.4  1.1527    1325   15.81  4078.0   153.4    4.74    0.1  0.31303    948
+
+  --------------------------------------------------------------------------------
+
+Run 12 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     56.519     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   43.481    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0006 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    5.676249 H 
+    3.143769 C 
+    2.568090 N 
+    1.284045 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1451  2152    27.55   405.00    18.04   257.88  1.2408  5.245    5.253
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.294     7.626 
+NUMBER MOLS GAS AND CONDENSED =     5.245    1.798
+
+ 2.573535e+000 H2         1.797684e+000 C&         1.282463e+000 N2         1.226323e+000 CO        
+ 1.099282e-001 CH4        4.115839e-002 H2O        8.246915e-003 CO2        1.789997e-003 NH3       
+ 1.329623e-003 CNH        8.237903e-005 C2H4       1.470490e-005 C2H2       1.412333e-005 CH2O      
+  6.91669E-06 CH3         6.91669E-06 CH3         6.91669E-06 CH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    14.199
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   962  1273     1.00    14.70   -20.90   257.88  1.2399  4.848    0.206
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.056     7.159 
+NUMBER MOLS GAS AND CONDENSED =     4.848    2.108
+
+ 2.267341e+000 H2         2.107514e+000 C&         1.283719e+000 N2         7.377966e-001 CO        
+ 2.596174e-001 H2O        1.551182e-001 CH4        1.432878e-001 CO2        6.026872e-004 NH3       
+   4.6506E-06 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    14.378
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   178.4  1.2610    1284   15.23  3938.8            4.18    0.1  0.30235    730
+   184.1  1.1636    1368   15.75  4155.5   156.2    4.67    0.1  0.31898    962
+
+  --------------------------------------------------------------------------------
+
+Run 13 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     59.111     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   40.889    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00002 LB/CU-IN OR   0.0007 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    5.337801 H 
+    2.956321 C 
+    2.685893 N 
+    1.342946 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1516  2269    27.55   405.00    19.60   259.27  1.2483  5.247    5.250
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.278     7.690 
+NUMBER MOLS GAS AND CONDENSED =     5.247    1.568
+
+ 2.490562e+000 H2         1.568292e+000 C&         1.341143e+000 N2         1.306107e+000 CO        
+ 7.426786e-002 CH4        2.633321e-002 H2O        5.218427e-003 CO2        2.132513e-003 CNH       
+ 1.429552e-003 NH3        8.748253e-005 C2H4       3.109235e-005 C2H2       1.459035e-005 H         
+   1.3939E-05 CH2O         1.3939E-05 CH2O         1.3939E-05 CH2O      
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    14.672
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   977  1298     1.00    14.70   -20.53   259.27  1.2495  4.870    0.205
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.006     7.211 
+NUMBER MOLS GAS AND CONDENSED =     4.870    1.851
+
+ 2.197724e+000 H2         1.851060e+000 C&         1.342657e+000 N2         8.450150e-001 CO        
+ 2.239232e-001 H2O        1.369765e-001 CO2        1.232166e-001 CH4        5.299602e-004 NH3       
+  5.97071E-06 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    14.878
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   181.7  1.2691    1336   15.19  4017.1            4.13    0.1  0.30836    750
+   186.9  1.1771    1416   15.68  4235.7   159.2    4.60    0.1  0.32514    977
+
+  --------------------------------------------------------------------------------
+
+Run 14 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     61.704     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   38.296    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00003 LB/CU-IN OR   0.0007 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    4.999354 H 
+    2.768872 C 
+    2.803695 N 
+    1.401848 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1591  2405    27.55   405.00    21.17   260.49  1.2556  5.235    5.263
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.290     7.780 
+NUMBER MOLS GAS AND CONDENSED =     5.235    1.334
+
+ 2.383778e+000 H2         1.399517e+000 N2         1.379478e+000 CO         1.334301e+000 C&        
+ 4.806049e-002 CH4        1.603393e-002 H2O        3.507499e-003 CNH        3.133439e-003 CO2       
+ 1.110069e-003 NH3        9.176016e-005 C2H4       6.865627e-005 C2H2       3.335767e-005 H         
+  1.64974E-05 CH3         1.64974E-05 CH3         1.64974E-05 CH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    15.223
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+   991  1325     1.00    14.70   -20.26   260.49  1.2597  4.888    0.205
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     7.966     7.274 
+NUMBER MOLS GAS AND CONDENSED =     4.888    1.589
+
+ 2.115288e+000 H2         1.588600e+000 C&         1.401592e+000 N2         9.551845e-001 CO        
+ 1.901041e-001 H2O        1.282519e-001 CO2        9.678167e-002 CH4        4.615097e-004 NH3       
+  7.60659E-06 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    15.441
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   185.3  1.2768    1398   15.15  4102.5            4.09    0.1  0.31491    775
+   189.9  1.1931    1472   15.59  4317.0   162.4    4.53    0.1  0.33137    991
+
+  --------------------------------------------------------------------------------
+
+Run 15 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     64.296     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   35.704    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00003 LB/CU-IN OR   0.0008 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    4.660906 H 
+    2.581425 C 
+    2.921497 N 
+    1.460749 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1678  2561    27.55   405.00    22.73   261.52  1.2627  5.210    5.288
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.326     7.893 
+NUMBER MOLS GAS AND CONDENSED =     5.210    1.096
+
+ 2.256073e+000 H2         1.457395e+000 N2         1.447542e+000 CO         1.095514e+000 C&        
+ 3.014009e-002 CH4        9.473408e-003 H2O        5.820033e-003 CNH        1.832607e-003 CO2       
+ 8.433111e-004 NH3        1.537855e-004 C2H2       9.479120e-005 C2H4       7.793074e-005 H         
+  2.56785E-05 CH3         2.56785E-05 CH3         2.56785E-05 CH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    15.860
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1006  1352     1.00    14.70   -20.10   261.52  1.2707  4.901    0.204
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     7.934     7.347 
+NUMBER MOLS GAS AND CONDENSED =     4.901    1.321
+
+ 2.021657e+000 H2         1.460524e+000 N2         1.321409e+000 C&         1.067743e+000 CO        
+ 1.583441e-001 H2O        1.173035e-001 CO2        7.491401e-002 CH4        3.974249e-004 NH3       
+  9.66422E-06 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    16.071
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   189.2  1.2842    1469   15.11  4193.5            4.05    0.1  0.32189    805
+   193.1  1.2083    1537   15.51  4401.9   165.9    4.45    0.1  0.33789   1006
+
+  --------------------------------------------------------------------------------
+
+Run 16 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     66.889     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   33.111    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00003 LB/CU-IN OR   0.0008 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    4.322459 H 
+    2.393977 C 
+    3.039299 N 
+    1.519650 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1774  2734    27.55   405.00    24.30   262.35  1.2699  5.175    5.324
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.380     8.028 
+NUMBER MOLS GAS AND CONDENSED =     5.175    0.852
+
+ 2.112155e+000 H2         1.514524e+000 N2         1.511903e+000 CO         8.519190e-001 C&        
+ 1.854599e-002 CH4        9.575013e-003 CNH        5.538305e-003 H2O        1.070544e-003 CO2       
+ 6.316355e-004 NH3        3.395144e-004 C2H2       1.807208e-004 H          9.586824e-005 C2H4      
+  3.92539E-05 CH3         3.92539E-05 CH3         3.92539E-05 CH3       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    16.593
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1022  1380     1.00    14.70   -20.07   262.35  1.2824  4.909    0.204
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     7.911     7.432 
+NUMBER MOLS GAS AND CONDENSED =     4.909    1.051
+
+ 1.917158e+000 H2         1.519454e+000 N2         1.180448e+000 CO         1.051495e+000 C&        
+ 1.293653e-001 H2O        1.048910e-001 CO2        5.708553e-002 CH4        3.379062e-004 NH3       
+  1.22449E-05 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    16.778
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   193.2  1.2918    1548   15.08  4288.5            4.01    0.2  0.32919    839
+   196.5  1.2207    1613   15.44  4491.8   169.6    4.35    0.2  0.34479   1022
+
+  --------------------------------------------------------------------------------
+
+Run 17 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     69.481     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   30.519    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00003 LB/CU-IN OR   0.0009 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    3.984011 H 
+    2.206529 C 
+    3.157102 N 
+    1.578551 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1878  2922    27.55   405.00    25.87   262.98  1.2776  5.133    5.367
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.446     8.183 
+NUMBER MOLS GAS AND CONDENSED =     5.133    0.603
+
+ 1.956505e+000 H2         1.573957e+000 CO         1.570592e+000 N2         6.034793e-001 C&        
+ 1.540572e-002 CNH        1.130496e-002 CH4        3.252275e-003 H2O        7.223259e-004 C2H2      
+ 6.367401e-004 CO2        4.690963e-004 NH3        4.066332e-004 H          9.462546e-005 C2H4      
+ 5.812978e-005 CH3        1.134307e-005 CH2O       2.927512e-006 CNHO       1.575504e-006 CHO       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    17.431
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1038  1409     1.00    14.70   -20.18   262.98  1.2949  4.912    0.204
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     7.896     7.530 
+NUMBER MOLS GAS AND CONDENSED =     4.912    0.780
+
+ 1.803079e+000 H2         1.578381e+000 N2         1.292573e+000 CO         7.799227e-001 C&        
+ 1.032252e-001 H2O        9.134825e-002 CO2        4.262342e-002 CH4        2.829581e-004 NH3       
+  1.55433E-05 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    17.570
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   197.4  1.2997    1634   15.04  4385.8            3.97    0.2  0.33666    874
+   200.2  1.2329    1696   15.38  4579.4   173.4    4.26    0.2  0.35152   1038
+
+  --------------------------------------------------------------------------------
+
+Run 18 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     72.074     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   27.926    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00004 LB/CU-IN OR   0.0010 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    3.645564 H 
+    2.019082 C 
+    3.274904 N 
+    1.637452 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1990  3123    27.55   405.00    27.43   263.41  1.2861  5.088    5.414
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.520     8.357 
+NUMBER MOLS GAS AND CONDENSED =     5.088    0.350
+
+ 1.792359e+000 H2         1.634668e+000 CO         1.625238e+000 N2         3.498902e-001 C&        
+ 2.403481e-002 CNH        6.859483e-003 CH4        1.935601e-003 H2O        1.459190e-003 C2H2      
+ 8.746806e-004 H          3.902294e-004 CO2        3.463557e-004 NH3        9.083169e-005 C2H4      
+ 8.259584e-005 CH3        1.048898e-005 CH2O       3.116144e-006 CNHO       2.718564e-006 CHO       
+  2.35213E-06 C2N2      
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    18.388
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1056  1441     1.00    14.70   -20.41   263.41  1.3083  4.909    0.204
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     7.889     7.642 
+NUMBER MOLS GAS AND CONDENSED =     4.909    0.508
+
+ 1.680143e+000 H2         1.637305e+000 N2         1.402732e+000 CO         5.079705e-001 C&        
+ 8.014660e-002 H2O        7.725935e-002 CO2        3.105475e-002 CH4        2.330713e-004 NH3       
+  1.97959E-05 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    18.461
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   201.5  1.3083    1724   14.99  4483.8            3.93    0.2  0.34418    911
+   204.1  1.2447    1784   15.32  4664.4   177.4    4.17    0.2  0.35804   1056
+
+  --------------------------------------------------------------------------------
+
+Run 19 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     74.667     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   25.333    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00004 LB/CU-IN OR   0.0011 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    3.307117 H 
+    1.831634 C 
+    3.392706 N 
+    1.696353 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  2108  3335    27.55   405.00    29.00   263.62  1.2957  5.041    5.465
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.599     8.554 
+NUMBER MOLS GAS AND CONDENSED =     5.041    0.091
+
+ 1.694615e+000 CO         1.678111e+000 N2         1.621599e+000 H2         9.055038e-002 C&        
+ 3.617077e-002 CNH        4.143306e-003 CH4        2.775214e-003 C2H2       1.784017e-003 H         
+ 1.171310e-003 H2O        2.540322e-004 NH3        2.478588e-004 CO2        1.118528e-004 CH3       
+ 8.446541e-005 C2H4       9.615772e-006 CH2O       6.944010e-006 C2N2       4.508799e-006 CHO       
+  3.91175E-06 C2H         3.91175E-06 C2H         3.91175E-06 C2H       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    19.487
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1075  1476     1.00    14.70   -20.79   263.62  1.3226  4.901    0.204
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     7.891     7.771 
+NUMBER MOLS GAS AND CONDENSED =     4.901    0.237
+
+ 1.696225e+000 N2         1.549038e+000 H2         1.509549e+000 CO         2.368123e-001 C&        
+ 6.323662e-002 CO2        6.027509e-002 H2O        2.196383e-002 CH4        1.877159e-004 NH3       
+  2.54361E-05 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    19.465
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   205.6  1.3181    1819   14.95  4581.2            3.88    0.2  0.35166    947
+   208.2  1.2536    1880   15.27  4751.7   181.5    4.08    0.2  0.36474   1075
+
+  --------------------------------------------------------------------------------
+
+Run 20 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     77.259     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   22.741    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00004 LB/CU-IN OR   0.0012 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    2.968669 H 
+    1.644186 C 
+    3.510508 N 
+    1.755254 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  2354  3778    27.55   405.00    30.56   262.60  1.2937  4.886    5.638
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.752     8.752 
+NUMBER MOLS GAS AND CONDENSED =     4.886    0.000
+
+ 1.754969e+000 N2         1.624841e+000 CO         1.388211e+000 H2         9.245210e-002 H2O       
+ 1.890502e-002 CO2        6.334431e-003 H          3.657959e-004 CNH        1.538066e-004 NH3       
+ 7.462887e-005 HO         1.011990e-005 CHO        8.825848e-006 CH4        7.735979e-006 CH2O      
+  4.75376E-06 NO          4.75376E-06 NO          4.75376E-06 NO        
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    20.465
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1094  1510     1.00    14.70   -22.43   262.60  1.3353  4.860    0.206
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     7.914     7.914 
+NUMBER MOLS GAS AND CONDENSED =     4.860    0.000
+
+ 1.755146e+000 N2         1.567428e+000 CO         1.403055e+000 H2         6.503141e-002 CO2       
+ 5.770893e-002 H2O        1.165620e-002 CH4        1.492688e-004 NH3        2.424932e-005 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    20.575
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   214.2  1.3141    2035   14.96  4773.2            3.90    0.3  0.36639   1066
+   214.8  1.2919    2057   15.08  4829.7   187.8    3.93    0.3  0.37073   1094
+
+  --------------------------------------------------------------------------------
+
+Run 21 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     79.852     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   20.148    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00005 LB/CU-IN OR   0.0014 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    2.630222 H 
+    1.456738 C 
+    3.628310 N 
+    1.814155 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  2677  4359    27.55   405.00    32.13   258.90  1.2789  4.597    5.992
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.112     9.113 
+NUMBER MOLS GAS AND CONDENSED =     4.597    0.000
+
+ 1.813977e+000 N2         1.394912e+000 CO         1.009436e+000 H2         2.940086e-001 H2O       
+ 6.168725e-002 CO2        2.136767e-002 H          1.590743e-003 HO         1.687367e-004 NO        
+ 7.449555e-005 NH3        6.648374e-005 CNH        2.118659e-005 O          1.959295e-005 CHO       
+ 5.317743e-006 NH2        4.917006e-006 CH2O       2.892715e-006 CNHO       2.515405e-006 O2        
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    21.751
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1289  1860     1.00    14.70   -25.76   258.90  1.3139  4.586    0.218
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.318     8.318 
+NUMBER MOLS GAS AND CONDENSED =     4.586    0.000
+
+ 1.814110e+000 N2         1.310401e+000 CO         1.103759e+000 H2         2.111939e-001 H2O       
+ 1.462527e-001 CO2        4.452487e-005 NH3        3.352252e-005 CH4        3.964604e-006 CNH       
+  2.07618E-06 H         
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    21.806
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   223.2  1.2959    2332   15.06  4963.5            3.99    0.3  0.38100   1255
+   224.5  1.2721    2359   15.18  5006.3   195.0    4.03    0.3  0.38429   1289
+
+  --------------------------------------------------------------------------------
+
+Run 22 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     82.444     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   17.556    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00006 LB/CU-IN OR   0.0016 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    2.291775 H 
+    1.269290 C 
+    3.746113 N 
+    1.873056 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  2984  4912    27.55   405.00    33.70   253.84  1.2656  4.320    6.378
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.466     9.468 
+NUMBER MOLS GAS AND CONDENSED =     4.320    0.000
+
+ 1.871978e+000 N2         1.152507e+000 CO         6.435660e-001 H2         4.724338e-001 H2O       
+ 1.166869e-001 CO2        4.778818e-002 H          1.177520e-002 HO         2.045736e-003 NO        
+ 5.293246e-004 O          1.556594e-004 O2         3.234444e-005 NH3        2.714198e-005 CHO       
+ 1.902070e-005 CNH        8.355340e-006 NH2        6.783120e-006 N          3.119969e-006 NH        
+   2.6873E-06 CH2O         2.6873E-06 CH2O         2.6873E-06 CH2O      
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    23.150
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1520  2277     1.00    14.70   -28.54   253.84  1.2913  4.288    0.233
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.808     8.808 
+NUMBER MOLS GAS AND CONDENSED =     4.288    0.000
+
+ 1.873028e+000 N2         1.060178e+000 CO         7.511274e-001 H2         3.946970e-001 H2O       
+ 2.090632e-001 CO2        4.000635e-005 H          1.226804e-005 NH3        1.002918e-006 CNH       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    23.320
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   229.9  1.2797    2618   15.14  5104.9            4.08    0.4  0.39186   1446
+   232.7  1.2418    2669   15.33  5166.3   200.6    4.16    0.4  0.39657   1520
+
+  --------------------------------------------------------------------------------
+
+Run 23 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     85.037     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   14.963    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00007 LB/CU-IN OR   0.0018 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    1.953327 H 
+    1.081843 C 
+    3.863915 N 
+    1.931957 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  3233  5359    27.55   405.00    35.26   247.65  1.2549  4.065    6.778
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.780     9.783 
+NUMBER MOLS GAS AND CONDENSED =     4.065    0.000
+
+ 1.925120e+000 N2         8.851366e-001 CO         5.794661e-001 H2O        3.392049e-001 H2        
+ 1.966284e-001 CO2        6.867242e-002 H          4.715448e-002 HO         1.356058e-002 NO        
+ 5.634950e-003 O          3.813140e-003 O2         2.981509e-005 N          2.514195e-005 CHO       
+ 1.788993e-005 HO2        1.142389e-005 NH3        9.661705e-006 NHO        8.183807e-006 NH2       
+ 7.396359e-006 NH         4.968480e-006 CNH        2.822546e-006 N2O        2.059204e-006 NO2       
+  1.42034E-06 CNHO        1.42034E-06 CNHO      
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    24.603
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1785  2754     1.00    14.70   -30.59   247.65  1.2697  3.991    0.251
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.354     9.354 
+NUMBER MOLS GAS AND CONDENSED =     3.991    0.000
+
+ 1.931934e+000 N2         7.940606e-001 CO         5.623391e-001 H2O        4.140744e-001 H2        
+ 2.877331e-001 CO2        4.067278e-004 H          3.605404e-005 HO         2.844065e-006 NH3       
+  1.83589E-06 NO        
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    25.059
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   233.4  1.2667    2852   15.20  5174.8            4.15    0.4  0.39722   1608
+   239.4  1.1986    2959   15.56  5287.9   204.2    4.31    0.4  0.40590   1785
+
+  --------------------------------------------------------------------------------
+
+Run 24 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     87.630     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                   12.370    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00008 LB/CU-IN OR   0.0022 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    1.614880 H 
+    0.894395 C 
+    3.981717 N 
+    1.990858 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  3349  5569    27.55   405.00    36.83   240.43  1.2483  3.851    7.154
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.986     9.989 
+NUMBER MOLS GAS AND CONDENSED =     3.851    0.000
+
+ 1.967975e+000 N2         6.060137e-001 CO         5.744729e-001 H2O        2.883178e-001 CO2       
+ 1.534421e-001 H2         9.824467e-002 HO         6.058780e-002 H          4.559827e-002 NO        
+ 3.344300e-002 O2         2.265879e-002 O          1.083278e-004 HO2        5.485958e-005 N         
+ 2.267730e-005 NHO        1.956816e-005 NO2        1.453231e-005 CHO        9.926820e-006 N2O       
+ 8.201418e-006 NH         4.896744e-006 NH2        3.481689e-006 NH3        1.437141e-006 NHO2      
+   1.2872E-06 NHO2         1.2872E-06 NHO2      
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    25.967
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  2110  3338     1.00    14.70   -31.16   240.43  1.2483  3.695    0.271
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.988     9.989 
+NUMBER MOLS GAS AND CONDENSED =     3.695    0.000
+
+ 1.990731e+000 N2         6.624123e-001 H2O        4.619662e-001 CO         4.323789e-001 CO2       
+ 1.431059e-001 H2         2.412505e-003 H          1.379401e-003 HO         2.115633e-004 NO        
+  3.19491E-05 O2          3.19491E-05 O2        
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    27.066
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   232.1  1.2588    2965   15.24  5139.7            4.19    0.5  0.39452   1694
+   243.3  1.1428    3162   15.86  5365.0   204.4    4.58    0.5  0.41182   2110
+
+  --------------------------------------------------------------------------------
+
+Run 25 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     90.222     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                    9.778    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00010 LB/CU-IN OR   0.0028 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    1.276432 H 
+    0.706947 C 
+    4.099519 N 
+    2.049760 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  3329  5533    27.55   405.00    38.39   232.37  1.2461  3.681    7.485
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =    10.058    10.061 
+NUMBER MOLS GAS AND CONDENSED =     3.681    0.000
+
+ 2.006272e+000 N2         4.956943e-001 H2O        3.550239e-001 CO         3.518700e-001 CO2       
+ 1.233845e-001 O2         1.207650e-001 HO         8.673893e-002 NO         6.379347e-002 H2        
+ 4.024786e-002 O          3.633644e-002 H          2.635435e-004 HO2        7.401055e-005 NO2       
+ 4.876367e-005 N          2.839102e-005 NHO        1.946430e-005 N2O        5.424617e-006 CHO       
+ 4.918746e-006 NH         3.666065e-006 NHO2       3.282071e-006 NHO2       2.018324e-006 NH2       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    27.169
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  2357  3783     1.00    14.70   -27.92   232.37  1.2342  3.457    0.289
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =    10.471    10.472 
+NUMBER MOLS GAS AND CONDENSED =     3.457    0.000
+
+ 2.043157e+000 N2         6.143570e-001 CO2        6.103560e-001 H2O        9.254223e-002 CO        
+ 4.090182e-002 O2         2.053387e-002 HO         1.604390e-002 H2         1.316519e-002 NO        
+ 3.041831e-003 H          2.577968e-003 O          8.812827e-006 HO2        2.973032e-006 NO2       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    28.929
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   226.4  1.2561    2951   15.26  5013.8            4.21    0.6  0.38486   1693
+   240.2  1.1255    3173   15.96  5287.3   199.9    4.92    0.7  0.40585   2357
+
+  --------------------------------------------------------------------------------
+
+Run 26 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     92.815     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                    7.185    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00014 LB/CU-IN OR   0.0038 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    0.937985 H 
+    0.519499 C 
+    4.217321 N 
+    2.108661 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  3199  5299    27.55   405.00    39.96   223.49  1.2478  3.545    7.772
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =    10.003    10.006 
+NUMBER MOLS GAS AND CONDENSED =     3.545    0.000
+
+ 2.049763e+000 N2         3.875947e-001 H2O        3.619589e-001 CO2        2.881897e-001 O2        
+ 1.574914e-001 CO         1.174785e-001 NO         1.032060e-001 HO         4.140199e-002 O         
+ 2.208722e-002 H2         1.496363e-002 H          3.696196e-004 HO2        1.698606e-004 NO2       
+ 2.697723e-005 N2O        2.381064e-005 N          2.281552e-005 NHO        5.858802e-006 NHO2      
+  5.22925E-06 NHO2        5.22925E-06 NHO2        5.22925E-06 NHO2      
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    28.210
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  2072  3271     1.00    14.70   -20.26   223.49  1.2464  3.403    0.294
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =    10.053    10.053 
+NUMBER MOLS GAS AND CONDENSED =     3.403    0.000
+
+ 2.099180e+000 N2         5.152735e-001 CO2        4.634361e-001 H2O        2.904962e-001 O2        
+ 1.890358e-002 NO         9.354551e-003 HO         4.177120e-003 CO         1.142019e-003 O         
+ 7.792480e-004 H2         1.355856e-004 H          1.711253e-005 NO2        1.409107e-005 HO2       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    29.386
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   217.7  1.2581    2834   15.25  4820.6            4.20    0.8  0.37003   1620
+   228.9  1.1335    3031   15.92  5060.7   192.0    4.67    0.9  0.38846   2072
+
+  --------------------------------------------------------------------------------
+
+Run 27 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     95.407     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                    4.593    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00022 LB/CU-IN OR   0.0060 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    0.599538 H 
+    0.332052 C 
+    4.335124 N 
+    2.167562 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  2931  4816    27.55   405.00    41.53   213.63  1.2552  3.449    7.987
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.772     9.775 
+NUMBER MOLS GAS AND CONDENSED =     3.449    0.000
+
+ 2.107683e+000 N2         5.371817e-001 O2         2.956457e-001 CO2        2.651163e-001 H2O       
+ 1.193473e-001 NO         5.675241e-002 HO         3.635697e-002 CO         2.301310e-002 O         
+ 4.562986e-003 H2         3.037932e-003 H          3.189032e-004 HO2        2.903428e-004 NO2       
+ 2.781275e-005 N2O        1.042422e-005 NHO        6.609655e-006 NHO2       5.863128e-006 NHO2      
+   4.5137E-06 N         
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    28.991
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1646  2503     1.00    14.70    -9.67   213.63  1.2707  3.401    0.294
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.329     9.329 
+NUMBER MOLS GAS AND CONDENSED =     3.401    0.000
+
+ 2.164004e+000 N2         5.981401e-001 O2         3.319745e-001 CO2        2.993438e-001 H2O       
+ 7.050520e-003 NO         7.800268e-004 HO         3.529141e-005 O          2.826079e-005 CO        
+  2.17741E-05 NO2         2.17741E-05 NO2         2.17741E-05 NO2       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    29.399
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   204.7  1.2668    2586   15.20  4539.1            4.15    1.2  0.34842   1458
+   211.1  1.1826    2697   15.65  4672.2   179.6    4.35    1.3  0.35864   1646
+
+  --------------------------------------------------------------------------------
+
+Run 28 of 28
+   Code                                   WEIGHT     D-H  DENS     COMPOSITION
+      0 NITROUS OXIDE                     98.000     443  0.07140   2 N    1 O  
+      0 PETROLEUM JELLY                    2.000    -161  0.00001  72 C  130 H  
+ 
+THE PROPELLANT DENSITY IS  0.00050 LB/CU-IN OR   0.0137 GM/CC
+THE TOTAL PROPELLANT WEIGHT IS  100.0000 GRAMS
+ 
+NUMBER OF GRAM ATOMS OF EACH ELEMENT PRESENT IN INGREDIENTS
+ 
+    0.261090 H 
+    0.144604 C 
+    4.452926 N 
+    2.226463 O 
+ 
+****************************CHAMBER RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  2440  3933    27.55   405.00    43.09   202.07  1.2730  3.410    8.079
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     9.266     9.267 
+NUMBER MOLS GAS AND CONDENSED =     3.410    0.000
+
+ 2.189600e+000 N2         8.625211e-001 O2         1.431169e-001 CO2        1.244652e-001 H2O       
+ 7.328091e-002 NO         1.147477e-002 HO         3.502622e-003 O          1.437963e-003 CO        
+ 3.636022e-004 NO2        2.094224e-004 H2         1.117904e-004 HO2        9.794851e-005 H         
+ 1.727317e-005 N2O        4.269729e-006 NHO2       3.722994e-006 NHO2       1.303829e-006 NHO       
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    29.323
+
+****************************EXHAUST RESULTS FOLLOW   *****************************
+  T(K)  T(F)  P(ATM)   P(PSI) ENTHALPY  ENTROPY   CP/CV    GAS   RT/V
+  1211  1720     1.00    14.70     3.19   202.07  1.3041  3.405    0.294
+ 
+SPECIFIC HEAT (MOLAR) OF GAS AND TOTAL =     8.522     8.522 
+NUMBER MOLS GAS AND CONDENSED =     3.405    0.000
+
+ 2.226027e+000 N2         9.029692e-001 O2         1.445538e-001 CO2        1.305141e-001 H2O       
+  0.000816275 NO          0.000816275 NO          0.000816275 NO        
+
+THE MOLECULAR WEIGHT OF THE MIXTURE IS    29.369
+
+ **********PERFORMANCE:  FROZEN ON FIRST LINE, SHIFTING ON SECOND LINE**********
+
+ IMPULSE   IS EX      T*      P*      C*    ISP*  OPT-EX  D-ISP      A*M   EX-T
+   184.1  1.2879    2133   15.10  4092.3            4.03    2.5  0.31413   1163
+   186.4  1.2427    2178   15.33  4157.8   161.2    4.08    2.6  0.31915   1211
+
+  --------------------------------------------------------------------------------
+

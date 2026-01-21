@@ -60,11 +60,11 @@ engine.ox_orifice_diameter = 0.001
 
 engine.fuel_orifice_number = 0
 
-a_0 = 0.000116
+# a_0 = 0.000116
 
-engine.regression_a = a_0
-engine.regression_n = 0.35 # 0.336
-engine.regression_m = 0
+# engine.regression_a = a_0
+# engine.regression_n = 0.35 # 0.336
+# engine.regression_m = 0
 
 engine.solid_propellant_density = 960
 
